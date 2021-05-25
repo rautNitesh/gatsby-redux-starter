@@ -1,9 +1,9 @@
+import {TOGGLE_DRAWER} from '../types/app.types'
+
 const initialState = {
   isDrawerOpen: false,
 };
 
-const TOGGLE_DRAWER = 'TOGGLE_DRAWER';
-export const toggleDrawer = open => ({ type: TOGGLE_DRAWER, payload: open });
 
 export default (state = initialState, action) => {
   const { type, payload } = action;
